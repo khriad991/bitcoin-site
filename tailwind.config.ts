@@ -27,6 +27,7 @@ const config: Config = {
       'normal': '#3E424A',
       'red': '#E96975',
       'green': '#0AB27D0F',
+      'blue': '#0052FE',
 
     },
     extend: {
