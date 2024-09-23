@@ -27,8 +27,8 @@ const PriceCardComponent = () => {
 
                 {/* Button Section */}
                 <div className="flex justify-center group">
-                    <button className="bg-white text-black group-hover:text-blue font-bold py-3 px-6 rounded-full shadow-md hover:bg-blue-100 transition-all duration-300">
-                        Get Started For Free→
+                    <button className="group bg-white text-black group-hover:text-blue font-bold py-3 px-6 rounded-full shadow-md hover:bg-blue-100 transition-all duration-300">
+                        Get Started For Free<span className="group-hover:ml-2">→</span>
                     </button>
                 </div>
             </div>
