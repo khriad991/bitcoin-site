@@ -3,7 +3,7 @@ import TestChart from "@/components/miniComponet/TestChat";
 
 const HeroComponent = () => {
     return (
-        <section>
+        <section className="bg-white py-9 px-3">
             <TestChart/>
         </section>
     );

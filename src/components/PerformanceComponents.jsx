@@ -1,11 +1,10 @@
 import React from 'react';
-import {RiErrorWarningLine} from "react-icons/ri";
 import {PiWarningCircleThin} from "react-icons/pi";
 
 const PerformanceComponents = () => {
     return (
         <>
-          <div className="flex flex-col gap-6 w-full bg-white px-5 pt-6 pb-10 mt-2 ">
+          <div className="flex flex-col gap-6 w-full bg-white px-4 pt-6 pb-10 mt-2 ">
               <div className="">
                   <h1 className="mb-6">Performance</h1>
                   <div className="flex flex-col gap-y-8">
@@ -99,7 +98,7 @@ const PerformanceComponents = () => {
                   </div>
               </div>
           </div>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
         </>
     );
 };

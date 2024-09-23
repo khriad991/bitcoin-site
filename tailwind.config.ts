@@ -21,6 +21,7 @@ const config: Config = {
       'white': '#ffffff',
       'gray-white': '#DEDFE2',
       'black': '#000000',
+      'black-md': '#191C1F',
       'gray-black': '#0F1629',
       'heading': '#0F1629',
       'sub-heading': '#0B1426',
