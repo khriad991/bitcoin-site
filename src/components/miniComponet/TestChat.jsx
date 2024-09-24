@@ -46,18 +46,16 @@ function TestChart() {
         { date: "2023-09-14", price: 31000 },
         { date: "2023-09-15", price: 30000 },
     ];
-
     const chartData = {
         labels: sampleData.map((item) => new Date(item.date).toLocaleDateString()), // Convert date to readable format
         datasets: [
             {
-                label: "Bitcoin Price (USD)",
+                // No label here to avoid the empty box in the legend
                 data: sampleData.map((item) => item.price),
-                borderColor: "blue ",
+                borderColor: "blue",
                 borderWidth: 1,
-
-                // borderRadius:10,
-                fill: false, // Ensure line is not filled under
+                borderRadius: 10,
+                fill: true, // Ensure the line is not filled under
             },
         ],
     };
@@ -80,14 +78,14 @@ function TestChart() {
         },
         plugins: {
             legend: {
-                display: true,
-                position: "top", // Position the legend on top of the chart
+                display: false, // Disable the legend entirely if you don't need it
             },
             tooltip: {
                 enabled: true, // Enable tooltips on hover
             },
         },
     };
+
 
     return (
         <div>
@@ -109,6 +107,23 @@ function TestChart() {
                     <span className="text-normal text-base font-medium ">(24H)</span>
                 </div>
                 <h4 className={"text-[#0B1426] text-base font-medium -mt-3"}>₹ 39,42,343</h4>
+
+                <div className="flex justify-between items-center">
+                    <h4 className={"text-sm sm:text-base text-black-md font-semibold"}>Bitcoin Price Chart (USD)</h4>
+                    <ul className="flex items-center justify-end space-x-1.5 md:space-x-4">
+                        <li className={"uppercase text-[#5D667B] text-[13px] font-medium "}>1h</li>
+                        <li className={"uppercase text-[#5D667B] text-[13px] font-medium "}>24h</li>
+                        <li className={"uppercase text-[#5D667B] text-[13px] font-medium "}>7d</li>
+                        <li className={"uppercase text-[#5D667B] text-[13px] font-medium "}>1m</li>
+                        <li className={"uppercase text-[#5D667B] text-[13px] font-medium "}>3m</li>
+                        <li className={"uppercase text-[#5D667B] text-[13px] font-medium "}>6m</li>
+                        <li className={"uppercase text-[#5D667B] text-[13px] font-medium hidden sm:block"}>1y</li>
+                        <li className={"uppercase text-[#5D667B] text-[13px] font-medium "}>all</li>
+                    </ul>
+
+                </div>
+
+
 
                 <div className="col-span-full h-80">
                     <Line data={chartData} options={options} />
