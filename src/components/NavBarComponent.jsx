@@ -14,8 +14,8 @@ const NavBarComponent = () => {
                     <div className="img-logo basis-[30%] ">
                         <Image src={koinLogo} alt="koin_logo" width={100} height={40} className="object-cover" />
                     </div>
-                    <nav className="basis-[65%] shrink relative lg:static">
-                       <div className={`${menu ?"flex" :"hidden lg:flex"} items-center justify-end absolute lg:static -top-1 right-1  py-4 px-10 lg:py-0 lg:px-0 min-w-fit`}>
+                    <nav className="basis-[65%] shrink relative lg:static bg-white">
+                       <div className={`${menu ?"flex" :"hidden lg:flex"} bg-white border-[1px] lg:border-none border-gray-white rounded items-center justify-end absolute lg:static -top-1 right-1 pt-5 pb-10 px-10 lg:py-0 lg:px-0 min-w-fit`}>
                            <ul className={`flex item-center justify-between flex-col lg:flex-row capitalize lg:gap-4 gap-y-4 lg:gap-y-0 `}>
                                <li className="lg:mt-2.5 mx-1 md:mx-1.5 lg:mx-2">
                                    <Link className="text-base font-semibold text-heading hover:text-gray-black transition-all duration-300 ease-out" href={"/crypto_taxes"}>
@@ -36,7 +36,6 @@ const NavBarComponent = () => {
                                    <button className="text-base font-semibold text-heading btn">Get Started</button>
                                </li>
                            </ul>
-
                        </div>
 
                     </nav>
