@@ -8,11 +8,13 @@ import AboutBitCoinComponent from "@/components/AboutBitCoinComponent";
 import TokenomicsComponent from "@/components/TokenomicsComponent";
 import TeamComponent from "@/components/TeamComponent";
 import TrendingCoinsComponent from "@/components/TrendingCoinsComponent";
+import PathComponent from "@/components/miniComponet/PathComponent";
 
 export default function Home() {
   return (
     <>
         <div className="container">
+            <PathComponent />
             <div className="grid grid-cols-12 gap-6 ">
                 <div className="col-span-full lg:col-span-9 flex flex-col gap-y-4">
                     <HeroComponent />
@@ -23,13 +25,7 @@ export default function Home() {
                     <TokenomicsComponent/>
                     <TeamComponent/>
                     <TrendingCoinsComponent />
-
-
-
-
-                    <div className="">
-                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    </div>
+                    
                 </div>
                 <div className="col-span-full lg:col-span-3">
                    <PriceCardComponent/>

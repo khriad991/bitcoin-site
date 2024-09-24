@@ -9,6 +9,11 @@ import {
     Tooltip,
     Legend,
 } from "chart.js";
+import Image from "next/image";
+import bitcoin from "@/assets/icon/bitcoin.png"
+import {FaSortUp} from "react-icons/fa";
+import React from "react";
+
 
 // Register the necessary components
 ChartJS.register(
@@ -19,6 +24,8 @@ ChartJS.register(
     Tooltip,
     Legend
 );
+
+
 
 function TestChart() {
     // Sample data for the chart
@@ -47,8 +54,10 @@ function TestChart() {
                 label: "Bitcoin Price (USD)",
                 data: sampleData.map((item) => item.price),
                 borderColor: "blue ",
-                borderWidth: 2,
-                fill: true, // Ensure line is not filled under
+                borderWidth: 1,
+
+                // borderRadius:10,
+                fill: false, // Ensure line is not filled under
             },
         ],
     };
@@ -81,9 +90,32 @@ function TestChart() {
     };
 
     return (
-        <div className="h-96 w-full ">
-            <Line data={chartData} options={options} />
+        <div>
+            <div className="grid grid-cols-1 gap-y-4 ">
+                <div className="col-span-full flex justify-start items-center space-x-2">
+                    <Image src={bitcoin} alt={"BTC"} width={26} height={36} className={"rounded-full object-cover"} />
+                    <h4 className={"text-2xl font-semibold text-black-md capitalize"}>bitcoin</h4>
+                    <span className="text-normal text-base font-semibold pr-5">btc</span>
+                    <p className={"bg-[#808A9D] py-2 px-4 font-medium text-white text-base rounded-lg capitalize"}>rank 1</p>
+                </div>
+
+
+                <div className="col-span-full flex justify-start space-x-4">
+                    <h4 className={"text-[28px] font-semibold text-black "}>$46,953.04</h4>
+                    <div className="bg-[#EBF9F4] rounded border-dotted border-2 border-[#14B079] px-2 flex space-x-1 items-center ">
+                        <FaSortUp size={14} className={"mt-2 w-[11px] h-2 "} color={"#14B079"}/>
+                        <h4 className="text-[#14B079] font-semibold text-base">2.51%</h4>
+                    </div>
+                    <span className="text-normal text-base font-medium ">(24H)</span>
+                </div>
+                <h4 className={"text-[#0B1426] text-base font-medium -mt-3"}>₹ 39,42,343</h4>
+
+                <div className="col-span-full h-80">
+                    <Line data={chartData} options={options} />
+                </div>
+            </div>
         </div>
+
     );
 }
 

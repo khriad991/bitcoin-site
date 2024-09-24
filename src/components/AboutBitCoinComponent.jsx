@@ -30,7 +30,7 @@ const AboutBitCoinComponent = () => {
 
                         <div className="flex flex-col gap-y-2.5 col-span-2 md:col-span-4 lg:col-span-3 px-2 ">
                             <h2 className="font-bold text-xl leading-7 text-white capitalize mt-1 ">Calculate your <br/> Profits</h2>
-                            <button className="bg-white flex justify-center items-center py-1.5  sm:py-2 px-4 sm:px-8 rounded-xl mr-1 font-bold text-[#0F1629] w-fit">check now <MdArrowRightAlt/>   </button>
+                            <button className="bg-white flex justify-center items-center py-1.5 sm:py-2 px-4 sm:px-5 rounded-xl mr-1 font-bold text-[#0F1629] w-fit">check now <MdArrowRightAlt/>   </button>
                         </div>
 
                     </div>

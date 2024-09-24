@@ -7,10 +7,10 @@ const TrendingCoinsComponent = () => {
         <div className="bg-white px-4 py-12">
             <div className="grid grid-cols-1 gap-y-5">
                 <h1 className={"-mb-2"}>You May Also Like</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
 
                     {
-                        Array.from({length:6}).map((item,id)=>(
+                        Array.from({length:5}).map((item,id)=>(
                             <div key={id} className="grid grid-cols-1 gap-y-2 py-2 px-4 border-[1px] border-[#E3E3E3]">
                                 <div className="flex items-center space-x-1.5 justify-start col-span-1">
                                     <Image src={"https://assets.coingecko.com/coins/images/21061/large/biconomy_logo.jpg?1696520444"} alt={"icon"} width={25} height={25}
@@ -24,13 +24,9 @@ const TrendingCoinsComponent = () => {
                             </div>
                         ))
                     }
-                </div>
-
-                <h1 className={"-mb-2"}>Trending Coins</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-
+                    <h1 className={"mt-1 -mb-1 col-span-full "}>Trending Coins</h1>
                     {
-                        Array.from({length:6}).map((item,id)=>(
+                        Array.from({length:5}).map((item,id)=>(
                             <div key={id} className="grid grid-cols-1 gap-y-2 py-2 px-4 border-[1px] border-[#E3E3E3]">
                                 <div className="flex items-center space-x-1.5 justify-start col-span-1">
                                     <Image src={"https://assets.coingecko.com/coins/images/21061/large/biconomy_logo.jpg?1696520444"} alt={"icon"} width={25} height={25}
@@ -45,9 +41,9 @@ const TrendingCoinsComponent = () => {
                         ))
                     }
 
-
-
                 </div>
+
+
 
             </div>
 
