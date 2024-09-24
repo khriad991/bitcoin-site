@@ -39,7 +39,7 @@ const SentimentComponent = () => {
                         </div>
                     </div>
                     
-                    <div className="grid grid-cols-1 border-2 border-red col-span-full ">
+                    <div className="grid grid-cols-1 col-span-full ">
                         <h4 className="mb-3 mt-4 flex items-center gap-x-2">Analyst Estimates
                             <PiWarningCircleThin  className="text-white text-xl bg-[#ABB9BF] rounded-full border-none rotate-[180deg] " />
                         </h4>
