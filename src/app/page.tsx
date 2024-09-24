@@ -6,6 +6,7 @@ import PerformanceComponents from "@/components/PerformanceComponents";
 import SentimentComponent from "@/components/SentimentComponent";
 import AboutBitCoinComponent from "@/components/AboutBitCoinComponent";
 import TokenomicsComponent from "@/components/TokenomicsComponent";
+import TeamComponent from "@/components/TeamComponent";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
                     <SentimentComponent />
                     <AboutBitCoinComponent/>
                     <TokenomicsComponent/>
+                    <TeamComponent/>
 
 
 
