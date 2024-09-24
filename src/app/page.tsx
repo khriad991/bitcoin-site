@@ -5,6 +5,7 @@ import FrameComponent from "@/components/FrameComponent";
 import PerformanceComponents from "@/components/PerformanceComponents";
 import SentimentComponent from "@/components/SentimentComponent";
 import AboutBitCoinComponent from "@/components/AboutBitCoinComponent";
+import TokenomicsComponent from "@/components/TokenomicsComponent";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
                     <PerformanceComponents/>
                     <SentimentComponent />
                     <AboutBitCoinComponent/>
+                    <TokenomicsComponent/>
 
 
 
